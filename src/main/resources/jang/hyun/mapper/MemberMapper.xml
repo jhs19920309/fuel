@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jang.hyun.mapper.MemberMapper">
+
+
+<resultMap type="dto.jang.hs.MemberVO" id="memberMap">
+
+<id property="userid" column="userid"/>
+<result property="userid" column="userid"/>
+<result property="userpw" column="userpw"/>
+<result property="userName" column="username"/>
+<result property="regDate" column="regdate"/>
+<result property="updateDate" column="updatedate"/>
+<collection property="authList" resultMap="authMap"/>
+
+</resultMap>
+
+
+<resultMap type="dto.jang.hs.AuthVO" id="authMap">
+<result property="userid" column="userid"/>
+<result property="auth" column="auth"/>
+</resultMap>
+
+
+<select id="read" resultMap="memberMap">
+
+SELECT mem.userid,userpw,username,enabled,regdate,updatedate,auth
+FROM
+	tbl_oilmember mem LEFT OUTER JOIN tbl_oilmember_auth auth on mem.userid=auth.userid
+	
+WHERE
+	mem.userid= #{userid}	
+ 
+</select>
+
+<select id="findOnlyId" resultType="int">
+
+select count(userid) from tbl_oilmember where userid=#{userid}
+
+</select>
+
+<insert id="insert">
+
+insert into tbl_oilmember (userid,userpw,username) values(#{userid},#{userpw},#{userName})
+ 
+</insert>
+
+<insert id="insertAuth">
+
+insert into tbl_oilmember_auth (userid,auth) values(#{userid},#{auth})
+
+</insert>
+
+
+</mapper>
