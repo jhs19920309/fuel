@@ -1,7 +1,7 @@
 package dto.jang.hs;
 
 public class AroundAllVO2 {
-	
+	//////////////////
 	private String uni_id;
 	private String poll_div_co;
 	private String os_nm;
