@@ -6,7 +6,7 @@ OPEN API(오피넷) / 카카오 API 그리고 Spring을 사용한 주유소 최�
 
 # 1. API에서 유가정보 받아오기  
 <hr>
-![image](https://user-images.githubusercontent.com/53259940/64059850-00adcd00-cbff-11e9-9d90-c4974c7e1a2a.png)  
+![image](https://user-images.githubusercontent.com/53259940/64059850-00adcd00-cbff-11e9-9d90-c4974c7e1a2a.png)
 <hr>
   
 ![image](https://user-images.githubusercontent.com/53259940/64059619-ff7aa100-cbfa-11e9-8bb1-4d8866fa5fba.png)
