@@ -62,7 +62,7 @@ Result : {D047=1458.89, B034=1905.3, K015=831.25, B027=1594.82, C004=1157.56}
 
 ![image](https://user-images.githubusercontent.com/53259940/64060139-bb3fce80-cc03-11e9-873e-6c8fbb58493a.png)  
 
-**WGS84 를 KATECH 좌표계로 변환하는 함수는 Google에서 오랜 검색끝에 누군가 만들어놓은 함수를 가져왔습니다  
+**WGS84 를 KATECH 좌표계로 변환하는 함수는 Google에서 오랜 검색끝에 누군가 만들어놓은 함수를 가져왔습니다** 
 
 ![image](https://user-images.githubusercontent.com/53259940/64060175-27223700-cc04-11e9-9018-3fd2dcdecafd.png)
 
