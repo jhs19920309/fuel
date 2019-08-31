@@ -81,5 +81,13 @@ Result : {D047=1458.89, B034=1905.3, K015=831.25, B027=1594.82, C004=1157.56}
 #### B.) 카카오 지도 직선거리 구하기에서 거리를 구하기 위해 클릭을 통한 거리 구하기 방식에서 직접 값을 넣어주는 방식을 위해 찾고자 하는 주유소의 주소에 해당하는 좌표를 구한다  
 ![image](https://user-images.githubusercontent.com/53259940/64061109-c9e0b280-cc10-11e9-9519-5dddbdcdfd4b.png)
          
-	
+![image](https://user-images.githubusercontent.com/53259940/64061136-2a6fef80-cc11-11e9-8801-68ca99db62fd.png)
+
+1.) setDistance함수로 현재 위치와 거리 구하기위한 주유소의 주소(예전 주소, 도로명 주소) 를 넘긴다  
+
+![image](https://user-images.githubusercontent.com/53259940/64061167-863a7880-cc11-11e9-9141-04a1bb3ad43d.png)
+
+1.) getcoordinate함수로 주소(예전 주소,도로명 주소)를 넘긴다음 Ajax로 컨트롤러를 거친다음 KAKAO API에서 주소에 해당하는 좌표를 얻어온다  
+
+
 
