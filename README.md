@@ -101,7 +101,7 @@ Result : {D047=1458.89, B034=1905.3, K015=831.25, B027=1594.82, C004=1157.56}
   "좌표오류"를 거리계산 데이터에 나타내게 함**
   
   <pre><code>
-  public static xy getdistance(String van_addr,String new_addr)throws Exception {	 
+    public static xy getdistance(String van_addr,String new_addr)throws Exception {	 
     String location = van_addr; 
     String addr = "https://dapi.kakao.com/v2/local/search/address.json"; 
     String apiKey = "KakaoAK 99c97591a96ee3ce4c7c164a61dbe013"; 
