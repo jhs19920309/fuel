@@ -56,9 +56,9 @@ Result : {D047=1458.89, B034=1905.3, K015=831.25, B027=1594.82, C004=1157.56}
 ![image](https://user-images.githubusercontent.com/53259940/64060095-263cd580-cc03-11e9-833e-16111def13c5.png)
 
 
-1.) 찾기 버튼을 누르면 aroundGetLocation() 함수가 동작하며 현재 위도 경도 위치를 가져온다
-2.) 현재 위도 경도는 WGS84 형식의 좌표계이고 OPEN API에서 받는 좌표계 형식은 KATECH형식이다 
-3.) WGS84 -> KATECH 형식으로 변환한 다음 OPEN API에서 내 주변 유가 정보 데이터를 가져온다
+1.) 찾기 버튼을 누르면 aroundGetLocation() 함수가 동작하며 현재 위도 경도 위치를 가져온다.  
+2.) 현재 위도 경도는 WGS84 형식의 좌표계이고 OPEN API에서 받는 좌표계 형식은 KATECH형식이다.  
+3.) WGS84 -> KATECH 형식으로 변환한 다음 OPEN API에서 내 주변 유가 정보 데이터를 가져온다.  
 
 ![image](https://user-images.githubusercontent.com/53259940/64060139-bb3fce80-cc03-11e9-873e-6c8fbb58493a.png)
 
