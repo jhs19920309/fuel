@@ -32,8 +32,8 @@ OPEN API(오피넷) / 카카오 API 그리고 Spring을 사용한 주유소 최�
 ![image](https://user-images.githubusercontent.com/53259940/64059918-4028e900-cc00-11e9-97c0-19863bad12c9.png)
 ![image](https://user-images.githubusercontent.com/53259940/64059921-50d95f00-cc00-11e9-8081-c2dacc7f95f9.png)
 
- 1.) 정보를 받고자하는 URL주소로 URL 객체를 생성해서 준비한다 URL주소와 연결한 뒤 이 연결로부터 입력받을 수 있는 InputStream 객체를 받고  
-     이 객체를 BufferedReader 생성자로 넣는다.  
+ 1.) 정보를 받고자하는 URL주소로 URL 객체를 생성해서 준비한다 URL주소와 연결한 뒤 이 연결로부터 입력받을 수 있는 InputStream 객체를 받고
+     이 객체를 BufferedReader 생성자로 넣는다.
 
  2.) InputStream으로 받은 것은 해당 URL이 반환하는 데이터 이고  www.oilfind.shop으로 하면 내 컨트롤러에서는 
      jsp를 반환하기때문에 <html><body>부터 끝까지 모든 스크립트정보가 반환된다.  
