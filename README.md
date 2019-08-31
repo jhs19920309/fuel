@@ -26,6 +26,9 @@ OPEN API(오피넷) / 카카오 API 그리고 Spring을 사용한 주유소 최�
  		   {"SIDOCD":"01","SIDONM":"서울","PRODCD":"D047","PRICE":1458.89,"DIFF":0.44}, 
                              {"SIDOCD":"01","SIDONM":"서울","PRODCD":"K015","PRICE":831.25,"DIFF":-0.14} ] }  }
 </code></pre>                       
-2.JSON객체 안에서 내가 사용할 key에 해당하는 값을 다시 받는다 ("RESULT")
+2.JSON객체 안에서 내가 사용할 key에 해당하는 값을 다시 받는다 ("RESULT")  
 3.다시 ("RESULT")에서 JSONArray 타입으로 데이터가 있는 OIL키의 값을 받아온다 
+
+![image](https://user-images.githubusercontent.com/53259940/64059918-4028e900-cc00-11e9-97c0-19863bad12c9.png)
+![image](https://user-images.githubusercontent.com/53259940/64059921-50d95f00-cc00-11e9-8081-c2dacc7f95f9.png)
 
