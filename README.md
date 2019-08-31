@@ -100,4 +100,54 @@ Result : {D047=1458.89, B034=1905.3, K015=831.25, B027=1594.82, C004=1157.56}
   신주소를 보냈을때 NUllPointer익셉션이 발생하면 다시 구 주소를 보내는 방식으로 하고 구 주소도 좌표가 안돌아오면 
   "좌표오류"를 거리계산 데이터에 나타내게 함**
   
-  
+  <pre><code>
+  public static xy getdistance(String van_addr,String new_addr)throws Exception {	 
+    String location = van_addr; 
+    String addr = "https://dapi.kakao.com/v2/local/search/address.json"; 
+    String apiKey = "KakaoAK 99c97591a96ee3ce4c7c164a61dbe013"; 
+    location = URLEncoder.encode(location, "UTF-8");                
+
+    String query = "query=" + location; 
+    StringBuffer stringBuffer = new StringBuffer();     // 문자열 조합 위함
+    stringBuffer.append(addr);
+    stringBuffer.append("?");
+    stringBuffer.append(query); 
+      
+    URL url = new URL(stringBuffer.toString());      // 해당 URL에 대한 커넥션 얻기    
+    URLConnection conn = url.openConnection();    
+    conn.setRequestProperty("Authorization", apiKey);  //RequestProperty에 (key,value)를 저장한다.    
+    BufferedReader rd = null;           // 버퍼생성 
+    rd = new BufferedReader(new InputStreamReader(conn.getInputStream(),"UTF-8"));  //     
+    StringBuffer docJson = new StringBuffer();    
+    String line;
+    
+    while((line=rd.readLine())!=null){ 
+        docJson.append(line);
+    }
+    
+    if(docJson.toString().contains("\"total_count\":0"))   //만약 두번 보내도 주소에맞는 좌표가 돌아오지 않는다면
+    		{
+    				xy result=new xy();
+    				result.setX("No");
+    				result.setY("No");
+    				return result;
+    		} 
+    if(0<docJson.toString().length()){
+        System.out.println("docJson    :"+docJson.toString()); 
+    } 
+    rd.close();
+    JSONParser jsonparser = new JSONParser();
+    JSONObject jsonObject =  (JSONObject)jsonparser.parse(docJson.toString());
+    
+    JSONArray jsonArray= (JSONArray) jsonObject.get("documents"); 
+    JSONObject tempObj = (JSONObject) jsonArray.get(0);
+   
+      System.out.println("latitude : " + (String)tempObj.get("y"));
+     System.out.println("longitude : " + (String)tempObj.get("x"));
+    
+    xy result=new xy();
+    result.setX((String)tempObj.get("x"));
+    result.setY((String)tempObj.get("y"));
+    return result;	
+}
+</code></pre>
