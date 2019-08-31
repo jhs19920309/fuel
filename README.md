@@ -75,7 +75,11 @@ Result : {D047=1458.89, B034=1905.3, K015=831.25, B027=1594.82, C004=1157.56}
 
 
 **계산 순서**
-#### A.) HTML5 GeoLocation 메소드로 현재 내 위치의 위도 경도 좌표를 구한다 (WGS84 좌표계)  
+#### A.) HTML5 GeoLocation 메소드로 현재 내 위치의 위도 경도 좌표를 구한다 (WGS84 좌표계)    
+ ![image](https://user-images.githubusercontent.com/53259940/64061094-7ff7cc80-cc10-11e9-832a-655350849ec5.png)  
  
-
+#### B.) 카카오 지도 직선거리 구하기에서 거리를 구하기 위해 클릭을 통한 거리 구하기 방식에서 직접 값을 넣어주는 방식을 위해 찾고자 하는 주유소의 주소에 해당하는 좌표를 구한다  
+![image](https://user-images.githubusercontent.com/53259940/64061109-c9e0b280-cc10-11e9-9519-5dddbdcdfd4b.png)
+         
+	
 
