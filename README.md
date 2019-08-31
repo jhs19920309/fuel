@@ -39,4 +39,7 @@ OPEN API(오피넷) / 카카오 API 그리고 Spring을 사용한 주유소 최�
      jsp를 반환하기때문에 <html><body>부터 끝까지 모든 스크립트정보가 반환된다.  
 	
  3.) 하지만 내가 설정한 URL은 JSON의 데이터를 문자열로 받게된다, 이것들을 다시 StringBuffer에 저장한다  
-     JSONParser 를 사용해 JSON형태의 문자열을 json객체로 만들어준다
+     JSONParser 를 사용해 JSON형태의 문자열을 json객체로 만들어준다  
+     
+**결과적으로 HashMap<String,Double> 형태로 데이터가 완성되어 리턴된다**
+Result : {D047=1458.89, B034=1905.3, K015=831.25, B027=1594.82, C004=1157.56}
