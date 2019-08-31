@@ -124,7 +124,8 @@ Result : {D047=1458.89, B034=1905.3, K015=831.25, B027=1594.82, C004=1157.56}
     while((line=rd.readLine())!=null){ 
         docJson.append(line);
     }
-    
+    </code></pre>
+    <pre><code>
     if(docJson.toString().contains("\"total_count\":0"))   //만약 두번 보내도 주소에맞는 좌표가 돌아오지 않는다면
     		{
     				xy result=new xy();
